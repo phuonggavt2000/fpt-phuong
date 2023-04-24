@@ -95,10 +95,10 @@ function Header() {
                     </div>
                     <div className="flex justify-center items-center mt-6">
                         <Link
-                            to="tel:0902666549"
+                            to="tel:0375956703"
                             className="bg-primary px-6 py-2 rounded-lg font-semibold text-white"
                         >
-                            Hotline: 0902 666 549
+                            Hotline: 0375 956 703
                         </Link>
                     </div>
                 </div>
