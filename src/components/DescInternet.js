@@ -5,7 +5,7 @@ import { features, registerNow } from "../ultis/static";
 import icons from "../ultis/icons";
 import DescPackage from "./DescPackageTv";
 
-function DescInternet({ tv = false }) {
+function DescInternet({ tv = false, business = false }) {
     const { IoDocumentText, AiFillFlag, CgEnter } = icons;
 
     return (
@@ -19,18 +19,30 @@ function DescInternet({ tv = false }) {
                             Giới thiệu
                         </span>
                     </h2>
-                    <p className="mt-4">
-                        Với sự bùng nổ mạnh mẽ về nội dung trên nền tảng trực
-                        tuyến, Internet giờ đây không chỉ đơn thuần sử dụng như
-                        công cụ đọc tin tức, kết nối mọi người, mà còn là nền
-                        tảng để trao đổi dữ liệu, đăng tải thông tin, làm việc
-                        trực tuyến,… Đứng trước nhu cầu sử dụng ngày một tinh tế
-                        hơn từ người dùng, FPT Telecom cung cấp 05 gói cước
-                        Internet cáp quang với tốc độ truy cập từ 150Mbps trở
-                        lên, đáp ứng tiêu chí nhanh về cả tốc độ đường truyền,
-                        sự nhanh nhạy bắt kịp xu thế công nghệ cũng như phương
-                        châm phục vụ khách hàng 24/7.
-                    </p>
+                    {business ? (
+                        <p className="mt-4">
+                            Bất cứ một doanh nghiệp, tổ chức nào cũng cần sử
+                            dụng một đường truyền Internet cáp quang ổn định,
+                            tốc độ nhanh chóng cùng một mức phí phù hợp. Thấu
+                            hiểu điều đó, FPT Telecom mang đến các gói cước cáp
+                            quang tốc độ cao dành cho doanh nghiệp sử dụng từ 30
+                            thiết bị, tốc độ truy cập từ 200 Mbps đến 500 Mbps
+                        </p>
+                    ) : (
+                        <p className="mt-4">
+                            Với sự bùng nổ mạnh mẽ về nội dung trên nền tảng
+                            trực tuyến, Internet giờ đây không chỉ đơn thuần sử
+                            dụng như công cụ đọc tin tức, kết nối mọi người, mà
+                            còn là nền tảng để trao đổi dữ liệu, đăng tải thông
+                            tin, làm việc trực tuyến,… Đứng trước nhu cầu sử
+                            dụng ngày một tinh tế hơn từ người dùng, FPT Telecom
+                            cung cấp 05 gói cước Internet cáp quang với tốc độ
+                            truy cập từ 150Mbps trở lên, đáp ứng tiêu chí nhanh
+                            về cả tốc độ đường truyền, sự nhanh nhạy bắt kịp xu
+                            thế công nghệ cũng như phương châm phục vụ khách
+                            hàng 24/7.
+                        </p>
+                    )}
                 </div>
             </div>
             <div className="max-w-[1200px] mx-auto mt-6 py-10 px-6 lg:px-0">

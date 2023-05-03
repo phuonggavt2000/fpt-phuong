@@ -2,6 +2,8 @@ import path from "./path";
 import icons from "./icons";
 import imgProduct from "../asset/products";
 import img from "../asset/imgs/img";
+import { IoBusinessOutline } from "react-icons/io5";
+
 const {
     FaPen,
     BsMessenger,
@@ -46,6 +48,11 @@ export const headers = [
         title: "Internet + Truyền hình FPT",
         path: path.INTERNET_TV,
         icon: <BsInboxes />,
+    },
+    {
+        title: "Internet doanh nghiệp FPT",
+        path: path.INTERNET_BUSINESS,
+        icon: <IoBusinessOutline />,
     },
     {
         title: "Truyền hình FPT",
@@ -288,6 +295,71 @@ export const comboProducts = [
         obj: "Sử dụng modem Wi-Fi 6",
         gift: "200+ kênh truyền hình đặc sắc",
         giftPlus: "Trang bị Modem 2 băng tần & Box thế hệ mới",
+    },
+];
+
+export const internetBusinesss = [
+    {
+        type: "business",
+        title: "Super 250",
+        price: "495.500",
+        img: imgProduct.super250,
+        desc: "Tốc độ Download 250 Mbps",
+        subDesc: "Tốc độ Upload 250 Mbps",
+        obj: "Phù hợp với cá nhân, doanh nghiệp nhỏ",
+        objPlus: "(< 50 thiết bị)",
+        gift: "Trang bị Modem cân bằng tải Cty và thiết bị phát Wifi",
+        giftPlus: "Miễn phí lắp đặt",
+        isRecommend: true,
+    },
+    {
+        type: "business",
+        title: "Super 400",
+        price: "1.272.700",
+        img: imgProduct.super400,
+        desc: "Tốc độ Download lên đến 400 Mbps",
+        subDesc: "Tốc độ Upload lên đến 400 Mbps",
+        obj: "Phù hợp với cá nhân, doanh nghiệp nhỏ",
+        objPlus: "(< 70 thiết bị)",
+        gift: "Trang bị Modem cân bằng tải Cty và thiết bị phát Wifi",
+        giftPlus: "Miễn phí lắp đặt",
+        isRecommend: true,
+    },
+    {
+        type: "business",
+        title: "Super 500",
+        price: "2.272.700",
+        img: imgProduct.lux500,
+        desc: "Tốc độ Download lên đến 500 Mbps",
+        subDesc: "Tốc độ Upload lên đến 500 Mbps",
+        obj: "Phù hợp với cá nhân, doanh nghiệp nhỏ",
+        objPlus: "(< 100 thiết bị)",
+        gift: "Trang bị Modem cân bằng tải Cty và thiết bị phát Wifi",
+        giftPlus: "Miễn phí lắp đặt",
+    },
+    {
+        type: "business",
+        title: "Lux 500",
+        price: "727.000",
+        img: imgProduct.lux500,
+        desc: "Tốc độ Download lên đến 500 Mbps",
+        subDesc: "Tốc độ Upload lên đến 500 Mbps",
+        obj: "Phù hợp với cá nhân, doanh nghiệp vừa",
+        objPlus: "(< 125 thiết bị)",
+        gift: "Trang bị Modem Wi-Fi 6 và thiết bị mở rộng sóng WI-FI 6",
+        giftPlus: "Miễn phí lắp đặt",
+    },
+    {
+        type: "business",
+        title: "Lux 800",
+        price: "909.000",
+        img: imgProduct.lux800,
+        desc: "Tốc độ Download lên đến 800 Mbps",
+        subDesc: "Tốc độ Upload lên đến 800 Mbps",
+        obj: "Phù hợp với cá nhân, doanh nghiệp vừa",
+        objPlus: "(< 160 thiết bị)",
+        gift: "Trang bị Modem Wi-Fi 6 và thiết bị mở rộng sóng WI-FI 6",
+        giftPlus: "Miễn phí lắp đặt",
     },
 ];
 

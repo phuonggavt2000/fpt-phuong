@@ -13,6 +13,7 @@ function Internet({
     imgProduct = imgInternet,
     title = "Cáp quang FPT",
     tv = false,
+    business = false,
 }) {
     const ref = useRef();
 
@@ -70,7 +71,7 @@ function Internet({
 
             <Product img={imgProduct} products={product} title={title} />
             <Register classPlus="bg-white px-0" classContainer="pt-0 py-0" />
-            <DescInternet tv={tv} />
+            <DescInternet tv={tv} business={business} />
         </div>
     );
 }

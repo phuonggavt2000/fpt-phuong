@@ -7,7 +7,11 @@ import imgCam from "../../asset/recommend/camera.jpg";
 import imgInternetP from "../../asset/recommend/internetPlus.png";
 import path from "../../ultis/path";
 import Product from "../../components/Product";
-import { internetProducts, comboProducts } from "../../ultis/static";
+import {
+    internetProducts,
+    comboProducts,
+    internetBusinesss,
+} from "../../ultis/static";
 import img from "../../asset/imgs/img";
 import Register from "./Register";
 import { useEffect, useRef } from "react";
@@ -52,6 +56,11 @@ function Home() {
                     title="Internet + Truyền hình"
                     img={img.combo}
                     products={comboProducts}
+                />
+                <Product
+                    title="Internet doanh nghiệp"
+                    img={img.internetBusiness}
+                    products={internetBusinesss}
                 />
                 <div className="lg:mt-20 mt-10 px-4">
                     <h1 className="lg:text-4xl text-2xl font-bold text-center mb-12">

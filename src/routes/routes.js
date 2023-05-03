@@ -10,6 +10,7 @@ import {
     RegisterSuccess,
 } from "../page/public";
 import PageRegister from "../page/public/PageRegister";
+import internetBusiness from "../page/public/internetBusiness";
 
 const routes = [
     {
@@ -51,6 +52,10 @@ const routes = [
     {
         path: path.REGiSTER_SUCCESS,
         component: RegisterSuccess,
+    },
+    {
+        path: path.INTERNET_BUSINESS,
+        component: internetBusiness,
     },
 ];
 

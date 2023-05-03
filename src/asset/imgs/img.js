@@ -25,6 +25,7 @@ const img = {
     playboxFilm: require("./playboxFilm.jpg"),
     bannerFptPlay: require("./bannerFptPlay.jpg"),
     zalo: require("./zalo.png"),
+    internetBusiness: require("./quang-danh-nghiep.png"),
 };
 
 export default img;

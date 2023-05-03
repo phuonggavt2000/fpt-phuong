@@ -8,6 +8,7 @@ const path = {
     CAMERA: "camera-fpt",
     NEWS: "tin-tuc-fpt",
     REGiSTER_SUCCESS: "dang-ky-thanh-cong",
+    INTERNET_BUSINESS: "internet-doanh-nghiep",
 };
 
 export default path;

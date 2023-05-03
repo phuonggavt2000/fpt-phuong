@@ -22,7 +22,7 @@ function Header() {
                         className="h-full w-full"
                     />
                 </Link>
-                <div className="hidden items-center ml-auto gap-x-4 lg:flex">
+                <div className="hidden items-center ml-auto  gap-x-2 lg:flex text-sm whitespace-nowrap">
                     {headers.map((item, index) => (
                         <NavLink
                             to={item.path}

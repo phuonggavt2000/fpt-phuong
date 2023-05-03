@@ -1,6 +1,6 @@
 import { GrPrevious, GrNext } from "react-icons/gr";
 import { FaPen, FaPlay } from "react-icons/fa";
-import { IoDocumentText, IoDesktop } from "react-icons/io5";
+import { IoDocumentText, IoDesktop, IoBusinessOutline } from "react-icons/io5";
 import { BsMessenger } from "react-icons/bs";
 import {
     MdNavigateNext,
@@ -83,6 +83,7 @@ const icons = {
     AiOutlineHome,
     AiOutlineWifi,
     BsInboxes,
+    IoBusinessOutline,
 };
 
 export default icons;

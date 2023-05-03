@@ -145,6 +145,7 @@ function Register({ classPlus = "bg-white", classContainer = "pt-[50px]" }) {
                             >
                                 <option>Internet FPT</option>
                                 <option>Intertnet + Truyền Hình FPT</option>
+                                <option>Intertnet doanh nghiệp</option>
                                 <option>Camera</option>
                             </select>
                         </div>
