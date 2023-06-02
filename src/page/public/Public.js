@@ -3,14 +3,27 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import icons from "../../ultis/icons";
 import img from "../../asset/imgs/img";
+import DropForm from "../../components/DropForm";
+import { useEffect, useState } from "react";
 
 function Public() {
     const { BsFillTelephoneFill } = icons;
+    const [showForm, setShowForm] = useState(false);
+    useEffect(() => {
+        setTimeout(() => {
+            setShowForm(true);
+        }, 15000);
+    }, []);
+
+    const toggleForm = () => {
+        setShowForm(!showForm);
+    };
     return (
         <div className="overflow-y-auto h-full w-screen overflow-hidden flex flex-col bg-[#F9F9F9]">
             <Header />
             <Outlet />
             <Footer />
+            {showForm && <DropForm toggleForm={toggleForm} />}
 
             <div className="fixed bottom-[4%] right-[1%] flex flex-col gap-y-4 text-white z-50">
                 <Link

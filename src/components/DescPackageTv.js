@@ -4,7 +4,7 @@ import NextBanner from "../components/NextBanner";
 import SliderPlaybox from "../components/SliderPlaybox";
 import { cardPlayboxs } from "../ultis/static";
 
-function DescPackage() {
+function DescPackage({ items = cardPlayboxs }) {
     const settings = {
         infinite: true,
         speed: 500,
@@ -19,7 +19,6 @@ function DescPackage() {
                     slidesToShow: 2,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
                 },
             },
             {
@@ -28,15 +27,14 @@ function DescPackage() {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                    dots: true,
                 },
             },
         ],
     };
     return (
-        <div>
+        <div className="-mx-2">
             <Slider {...settings}>
-                {cardPlayboxs.map((item, index) => (
+                {items.map((item, index) => (
                     <div className="px-2" key={index}>
                         <SliderPlaybox
                             key={index}

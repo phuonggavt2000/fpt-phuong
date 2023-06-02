@@ -63,7 +63,6 @@ function Footer() {
                                     0375.956.703
                                 </a>
                             </span>
-                            <span>Tên người đại diện: Ông Hoàng Nam Tiến</span>
                             <Link
                                 to="http://online.gov.vn/Home/WebDetails/35561?AspxAutoDetectCookieSupport=1"
                                 target="_blank"

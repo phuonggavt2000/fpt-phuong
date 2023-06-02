@@ -1,7 +1,7 @@
-import { GrPrevious, GrNext } from "react-icons/gr";
+import { GrPrevious, GrNext, GrClose } from "react-icons/gr";
 import { FaPen, FaPlay } from "react-icons/fa";
 import { IoDocumentText, IoDesktop, IoBusinessOutline } from "react-icons/io5";
-import { BsMessenger } from "react-icons/bs";
+import { BsMessenger, BsTicket } from "react-icons/bs";
 import {
     MdNavigateNext,
     MdOutlineSystemUpdateAlt,
@@ -15,6 +15,7 @@ import {
 } from "react-icons/fa";
 import { SiZalo } from "react-icons/si";
 import {
+    BsHeadset,
     BsCheckLg,
     BsPhone,
     BsPencil,
@@ -43,6 +44,9 @@ import {
     AiOutlineLoading3Quarters,
 } from "react-icons/ai";
 const icons = {
+    GrClose,
+    BsHeadset,
+    BsTicket,
     BsFillCheckCircleFill,
     AiOutlineLoading3Quarters,
     BsFillTelephoneFill,

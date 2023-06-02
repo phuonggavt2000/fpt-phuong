@@ -46,6 +46,17 @@ function Home() {
                         </Link>
                     ))}
                 </div>
+                <div className="flex justify-center items-center flex-col mt-6">
+                    <img
+                        className="w-[80px] text-center "
+                        alt="fpt telecom"
+                        src="https://khuyenmai-fpt.shop/wp-content/uploads/2022/07/km.gif"
+                    />
+                    <h2 className="font-semibold px-4 lg:text-2xl text-lg text-center mt-4 text-primary capitalize flex gap-x-2 justify-center items-center">
+                        Chương trình ngày vàng ưu đãi lên đến 3 tháng cước
+                    </h2>
+                </div>
+
                 <Register classPlus="bg-white" classContainer="pt-1" />
                 <Product
                     title="Cáp quang FPT "

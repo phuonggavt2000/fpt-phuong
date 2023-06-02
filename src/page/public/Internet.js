@@ -70,7 +70,7 @@ function Internet({
             />
 
             <Product img={imgProduct} products={product} title={title} />
-            <Register classPlus="bg-white px-0" classContainer="pt-0 py-0" />
+            <Register classPlus="bg-white px-0" />
             <DescInternet tv={tv} business={business} />
         </div>
     );

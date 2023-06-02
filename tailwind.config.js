@@ -9,6 +9,7 @@ module.exports = {
                 skin: "#000000",
                 primary: "#ff701d",
                 secondary: "#32323d",
+                "dark-alpha-50": "rgba(0 0 0/ 0.5)",
             },
             fontFamily: {
                 roboto: ["Roboto", "sans-serif"],

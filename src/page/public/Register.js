@@ -4,7 +4,12 @@ import { useNavigate } from "react-router-dom";
 import path from "../../ultis/path";
 import emailjs from "@emailjs/browser";
 
-function Register({ classPlus = "bg-white", classContainer = "pt-[50px]" }) {
+function Register({
+    classPlus = "bg-white",
+    classContainer = "",
+    options = "Internet FPT",
+    camera,
+}) {
     const { MdInfoOutline, AiOutlineLoading3Quarters } = icons;
     const navigate = useNavigate();
     const form = useRef();
@@ -12,8 +17,7 @@ function Register({ classPlus = "bg-white", classContainer = "pt-[50px]" }) {
     const [address, setAddress] = useState("");
     const [phone, setPhone] = useState("");
     const [isLoading, setIsLoading] = useState(false);
-    const [packageFpt, setPackageFpt] = useState("Internet FPT");
-    console.log("packageFpt:", packageFpt);
+    const [packageFpt, setPackageFpt] = useState(options);
 
     const handleSubmitForm = (e) => {
         e.preventDefault();
@@ -38,7 +42,11 @@ function Register({ classPlus = "bg-white", classContainer = "pt-[50px]" }) {
     };
 
     return (
-        <div className={` flex px-4 lg:pt-[70px]  ${classContainer} flex-col`}>
+        <div
+            className={` flex lg:pt-[70px]  flex-col  ${
+                camera ? "px-0" : classContainer ? "px-4" : "px-4 pt-[50px]"
+            }`}
+        >
             {/* <RegisterPackage /> */}
             <div
                 className={`lg:w-[736px] ${classPlus} w-full mx-auto my-6 rounded-xl px-4 py-6 shadow-card`}
@@ -90,7 +98,7 @@ function Register({ classPlus = "bg-white", classContainer = "pt-[50px]" }) {
                             </label>
                             <input
                                 required
-                                placeholder="31 Lê Văn Quới, Q.Bình Tân, HCM"
+                                placeholder="Tên Đường, Quận/Huyện, Thành Phố"
                                 type="text"
                                 id="address"
                                 value={address}
@@ -113,7 +121,7 @@ function Register({ classPlus = "bg-white", classContainer = "pt-[50px]" }) {
                             </label>
                             <input
                                 required
-                                placeholder="19006600"
+                                placeholder="0375956703"
                                 type="number"
                                 id="phone"
                                 value={phone}
@@ -146,8 +154,40 @@ function Register({ classPlus = "bg-white", classContainer = "pt-[50px]" }) {
                                 <option>Internet FPT</option>
                                 <option>Intertnet + Truyền Hình FPT</option>
                                 <option>Intertnet doanh nghiệp</option>
-                                <option>Camera</option>
+                                <option>Camera trong nhà</option>
+                                <option>Camera ngoài trời</option>
                             </select>
+                        </div>
+                        <div className="flex mt-2 flex-col col-span-2">
+                            <p className="uppercase text-[#767676] text-xs font-semibold">
+                                Quà tặng
+                            </p>
+                            <div className="flex mt-2 w-full items-center">
+                                <div className="w-1/2 flex items-center">
+                                    <input
+                                        type="radio"
+                                        id="hat"
+                                        name="gift"
+                                        value="nón bảo hiểm"
+                                        className="mr-2"
+                                        required
+                                    />
+                                    <label htmlFor="hat">Mũ bảo hiểm</label>
+                                </div>
+
+                                <div className="w-1/2 flex items-center">
+                                    <input
+                                        type="radio"
+                                        id="bottle"
+                                        name="gift"
+                                        value="bình giữ nhiệt"
+                                        className="mr-2"
+                                    />
+                                    <label htmlFor="bottle">
+                                        Bình giữ nhiệt
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         {isLoading ? (
                             <button

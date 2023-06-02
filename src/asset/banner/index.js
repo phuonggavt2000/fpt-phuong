@@ -2,7 +2,7 @@ import path from "../../ultis/path";
 
 const imgBanners = [
     {
-        to: path.TV,
+        to: path.INTERNET,
         img: require("./bannerPlaybox.jpg"),
     },
     {
@@ -11,7 +11,7 @@ const imgBanners = [
     },
 
     {
-        to: path.TV,
+        to: path.INTERNET,
         img: require("./bannerPlaybox2.jpg"),
     },
 ];
