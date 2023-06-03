@@ -184,7 +184,7 @@ export const internetProducts = [
     {
         type: "internet",
         title: "Giga",
-        price: "168.000",
+        price: "180.000",
         img: imgProduct.giga,
         desc: "Tốc độ Download 150 Mbps",
         subDesc: "Tốc độ Upload 150 Mbps",
@@ -196,7 +196,7 @@ export const internetProducts = [
     {
         type: "internet",
         title: "Sky",
-        price: "227.000",
+        price: "230.000",
         img: imgProduct.sky,
         desc: "Tốc độ download không giới hạn phụ thuộc vào thiết bị lên tới 1 Gbps",
         subDesc: "Tốc độ Upload 150 Mbps",
@@ -208,7 +208,7 @@ export const internetProducts = [
     {
         type: "internet",
         title: "Meta",
-        price: "318.000",
+        price: "330.000",
         img: imgProduct.meta,
         desc: "Tốc độ download & upload không giới hạn phụ thuộc vào thiết bị lên tới 1 Gbps",
         subDesc: "",
@@ -244,7 +244,7 @@ export const comboProducts = [
     {
         type: "combo",
         title: "Giga",
-        price: "176.000",
+        price: "200.000",
         img: imgProduct.giga,
         desc: "Tốc độ Download 150 Mbps",
         subDesc: "Tốc độ Upload 150 Mbps",
@@ -256,7 +256,7 @@ export const comboProducts = [
     {
         type: "combo",
         title: "Sky",
-        price: "255.000",
+        price: "250.000",
         img: imgProduct.sky,
         desc: "Tốc độ download không giới hạn phụ thuộc vào thiết bị lên tới 1 Gbps",
         subDesc: "Tốc độ Upload 150 Mbps",
@@ -268,7 +268,7 @@ export const comboProducts = [
     {
         type: "combo",
         title: "Meta",
-        price: "345.000",
+        price: "340.000",
         img: imgProduct.meta,
         desc: "Tốc độ download & upload không giới hạn phụ thuộc vào thiết bị lên tới 1 Gbps",
         subDesc: "",
